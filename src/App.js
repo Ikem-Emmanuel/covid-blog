@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import {Button, Input} from './components/base';
+import {InfoCards} from './components/layouts';
+import {getData} from './api';
+class App extends Component {
+	state = {
+		data: {},
+	};
+	async componentDidMount() {
+		const retrivedData = await getData();
+		this.setState({data: retrivedData});
+	}
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	render() {
+		const {data} = this.state;
+		return (
+			<div className='container py-20'>
+				<Button className='mx-auto bg-black'>Hello Covid-help</Button>
+				<Input></Input>
+				<InfoCards data={data} />
+			</div>
+		);
+	}
 }
 
 export default App;
