@@ -36,7 +36,7 @@ export const App = () => {
 				setLoading(true);
 			};
 			newData();
-		}, 3000);
+		}, 1200);
 	};
 
 	return (

@@ -5,13 +5,18 @@ import CountUp from 'react-countup';
 const InfoCards = ({data: {confirmed, recovered, deaths, lastUpdate}}) => {
 	// const [confirmed, setConfirmed] = useState(undefined);
 
-	console.log(confirmed);
+	// console.log(confirmed);
 	if (!confirmed) {
 		return (
 			<div className='container text-center mx-auto pt-20'>
 				<h1 className='text-gray-900 text-3xl'>Loading....</h1>
 			</div>
 		);
+	}
+
+	function formatDate(string) {
+		var options = {year: 'numeric', month: 'long', day: 'numeric'};
+		return new Date(string).toLocaleDateString([], options);
 	}
 
 	return (
@@ -80,7 +85,7 @@ const InfoCards = ({data: {confirmed, recovered, deaths, lastUpdate}}) => {
 						<div className='divide-y divide-gray-400'></div>
 						<div className='text-sm mr-auto'>
 							<span className='text-black-100 font-normal text-xs bg-orange-300 rounded py-1 px-2'>
-								{new Date(lastUpdate).toDateString()}
+								{formatDate(lastUpdate)}
 							</span>
 						</div>
 					</div>
@@ -108,7 +113,7 @@ const InfoCards = ({data: {confirmed, recovered, deaths, lastUpdate}}) => {
 						<div className='divide-y divide-gray-400'></div>
 						<div className='text-sm mr-auto'>
 							<span className='text-black-100 font-normal text-xs bg-green-300 rounded py-1 px-2'>
-								{new Date(lastUpdate).toDateString()}
+								{formatDate(lastUpdate)}
 							</span>
 						</div>
 					</div>
@@ -136,7 +141,7 @@ const InfoCards = ({data: {confirmed, recovered, deaths, lastUpdate}}) => {
 						<div className='divide-y divide-gray-400'></div>
 						<div className='text-sm mr-auto'>
 							<span className='text-black-100 font-normal text-xs bg-red-300 rounded py-1 px-2'>
-								{new Date(lastUpdate).toDateString()}
+								{formatDate(lastUpdate)}
 							</span>
 						</div>
 					</div>

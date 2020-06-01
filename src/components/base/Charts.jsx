@@ -12,6 +12,10 @@ export const Charts = () => {
 		getAPI();
 	}, []);
 
+	function formatDate() {
+		var options = {year: 'numeric', month: 'long', day: 'numeric'};
+		return new Date().toLocaleDateString([], options);
+	}
 	// border-2 border-solid border-blue-200
 
 	const lineChart = dailyData.length ? (
