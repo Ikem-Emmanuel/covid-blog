@@ -19,6 +19,8 @@
 		"react-loading": "^2.0.3",
 		"react-lottie": "^1.2.3",
 		"react-scripts": "3.4.1",
+		"react-table": "^7.1.0",
+		"table": "^5.4.6",
 		"tailwindcss": "^1.4.6"
 	},
 	"scripts": {

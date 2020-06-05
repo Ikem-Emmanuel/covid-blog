@@ -1,3 +1,4 @@
 import InfoCards from './InfoCards';
+import Country from './Country';
 
-export {InfoCards};
+export {InfoCards, Country};
