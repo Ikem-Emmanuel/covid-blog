@@ -38,11 +38,32 @@ const InfoCards = ({
 					</div>
 					<div className='py-2 text-center mx-auto'>
 						<p className='md:text-gray-700 font-normal text-justify text-xs sm:text-lg'>
-							<strong className='text-semibold text-gray-900 uppercase text-lg'>Covid 19 Trakka</strong> is an app built to get you aqqunted with the total <strong className='text-medium text-yellow-500 uppercase text-md'> Cornfirmed Cases, </strong> <strong className='text-medium text-green-500 uppercase text-md'> Recovered Cases, </strong> <strong className='text-medium text-red-500 uppercase text-md'> Death Cases </strong> of the Coronavirus all around the world and it also give you the same information about your Country or any Country of your choice.
+							<strong className='text-semibold text-gray-900 uppercase text-lg'>
+								Covid 19 Trakka
+							</strong>{' '}
+							is an app built to get you all the latest stats on the coronavirus{' '}
+							<strong className='text-medium text-yellow-500 uppercase text-md'>
+								{' '}
+								Cornfirmed Cases,{' '}
+							</strong>{' '}
+							<strong className='text-medium text-green-500 uppercase text-md'>
+								{' '}
+								Recovered Cases,{' '}
+							</strong>{' '}
+							<strong className='text-medium text-red-500 uppercase text-md'>
+								{' '}
+								Death Cases{' '}
+							</strong>{' '}
+							all around the world, also information about your Country or any
+							selected Country of your choice.
 						</p>
 					</div>
 					<div className='py-2 text-center mx-auto'>
-						<q className='text-center p-4'><strong className='text-gray-900 text-normal'> PS: </strong> Chats Info can be viewed on <strong className='text-gray-700'>Medium and Large Screen Size</strong></q>
+						<q className='text-center p-4'>
+							<strong className='text-gray-900 text-normal'> PS: </strong> Chats Info
+							can be viewed on{' '}
+							<strong className='text-gray-700'>Medium and Large Screen Size</strong>
+						</q>
 					</div>
 				</div>
 				<Country countryChange={countryChange} country={country} />
