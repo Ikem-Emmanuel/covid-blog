@@ -54,7 +54,7 @@ export const App = () => {
 
 	return (
 		<Fragment>
-			<div className='bg-gray-900'>
+			<div className='bg-gray-900 sticky top-0'>
 				<span className='text-center p-2'>
 					<img className='p-2 h-10 sm:h-12 mx-auto' src={logo} alt='Covid19 Trakka' />
 				</span>
