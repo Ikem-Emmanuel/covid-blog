@@ -32,18 +32,17 @@ const InfoCards = ({
 			<div className='flex flex-col mx-auto justify-center'>
 				<div className='bg-white mx-6 my-4 sm:mx-6 py-8 px-12 border-l-4 border-blue-300 border-solid rounded shadow-xl text-left'>
 					<div className='mr-auto'>
-						<span className='text-black font-medium md:font-semibold text-xl sm:text-4xl bg-gray-100 py-1 px-2 rounded'>
-							Get All your Covid19 Stats
+						<span className='text-black md:font-semibold text-lg sm:text-2xl bg-gray-100 py-1 px-2 rounded'>
+							What is Covid19 Trakka
 						</span>
 					</div>
-					<div className='py-2 text mx-auto'>
-						<p className='md:text-gray-700 font-normal text-justify text-xs'>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates
-							temporibus iure obcaecati nam voluptatem dolore placeat laborum
-							veritatis? Aspernatur nam delectus tempora assumenda vitae architecto
-							dolorem quisquam, sed nemo ad consequuntur neque mollitia at. Saepe
-							ducimus similique aut. Quam consequatur porro maxime quo
+					<div className='py-2 text-center mx-auto'>
+						<p className='md:text-gray-700 font-normal text-justify text-xs sm:text-lg'>
+							<strong className='text-semibold text-gray-900 uppercase text-lg'>Covid 19 Trakka</strong> is an app built to get you aqqunted with the total <strong className='text-medium text-yellow-500 uppercase text-md'> Cornfirmed Cases, </strong> <strong className='text-medium text-green-500 uppercase text-md'> Recovered Cases, </strong> <strong className='text-medium text-red-500 uppercase text-md'> Death Cases </strong> of the Coronavirus all around the world and it also give you the same information about your Country or any Country of your choice.
 						</p>
+					</div>
+					<div className='py-2 text-center mx-auto'>
+						<q className='text-center p-4'><strong className='text-gray-900 text-normal'> PS: </strong> Chats Info can be viewed on <strong className='text-gray-700'>Medium and Large Screen Size</strong></q>
 					</div>
 				</div>
 				<Country countryChange={countryChange} country={country} />

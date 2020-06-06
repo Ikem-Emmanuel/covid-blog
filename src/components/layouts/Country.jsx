@@ -17,12 +17,12 @@ const Country = ({countryChange, country}) => {
 				<div className='py-4'>
 					{!country.country ? (
 						<label htmlFor='country'>
-							<span className='text-black md:font-semibold text-xl sm:text-lg bg-gray-100 py-2 px-6 rounded uppercase flex flex-wrap sm:flex-no-wrap text-center'>
+							<span className='text-black md:font-semibold text-xl sm:text-lg bg-gray-100 py-2 px-6 rounded uppercase flex flex-wrap sm:flex-no-wrap justify-center'>
 								Select a Country to view their current coronavirus case
 							</span>
 						</label>
 					) : (
-						<span className='text-black md:font-semibold text-xl sm:text-lg bg-gray-100 py-2 px-6 rounded uppercase flex flex-wrap sm:flex-no-wrap text-center'>
+						<span className='text-black md:font-semibold text-xl sm:text-lg bg-gray-100 py-2 px-6 rounded uppercase flex flex-wrap sm:flex-no-wrap text-center justify-center'>
 							Below is a breakdown of {country.country}'s coronavirus cases
 						</span>
 					)}
