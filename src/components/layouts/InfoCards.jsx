@@ -33,7 +33,7 @@ const InfoCards = ({
 				<div className='bg-white mx-6 my-4 sm:mx-6 py-8 px-12 border-l-4 border-blue-300 border-solid rounded shadow-xl text-left'>
 					<div className='mr-auto'>
 						<span className='text-black font-medium md:font-semibold text-xl sm:text-4xl bg-gray-100 py-1 px-2 rounded'>
-							Get All your Covid Start
+							Get All your Covid19 Stats
 						</span>
 					</div>
 					<div className='py-2 text mx-auto'>
